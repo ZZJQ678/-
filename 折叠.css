@@ -1,0 +1,10 @@
+/* 思考折叠栏-护眼柔和版 - 独立提取版 */
+.t{margin:6px 0;font-family:system-ui,sans-serif;max-width:100%;box-sizing:border-box;}
+.ts{display:flex;align-items:center;gap:6px;padding:8px 12px;background:#2b2b2b;border:1px solid #3a3a3a;border-radius:8px;cursor:pointer;list-style:none;color:#9a9a9a;font-size:13px;font-weight:400;transition:all .2s ease;}
+.ts::-webkit-details-marker{display:none;}
+.ts:hover{background:#333;border-color:#4a4a4a;}
+.ts::after{content:"▸";color:#666;font-size:10px;transition:transform .2s;}
+.t[open] .ts{border-radius:8px 8px 0 0;border-bottom-color:transparent;background:#2a2a2a;}
+.t[open] .ts::after{content:"▾";}
+.tc{padding:10px 12px;background:#252525;border:1px solid #3a3a3a;border-top:none;border-radius:0 0 8px 8px;color:#888;font-size:12px;line-height:1.6;}
+@media(max-width:400px){.ts{padding:6px 10px;font-size:12px;}.tc{padding:8px 10px;font-size:11px;}}
